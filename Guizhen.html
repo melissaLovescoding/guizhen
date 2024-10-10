@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="Guizhen.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alles Gute zum Geburtstag!</h1>
+        <p>Ein neues Jahr, ein neuer Anfang!</p>
+        <img src="picture.jpg" alt="Small image" class="small-image">
+        <button id="surpriseButton">Klick auf mich</button>
+        
+        <!-- 隐藏视频部分 -->
+        <div id="surprise" class="hidden">
+            <video id="birthdayVideo" width="800" controls>
+                <source src="happybirthday_meow.mp4" type="video/mp4">
+            </video>
+            <div class="controls">
+                <button onclick="playVideo()">Spiel</button>
+                <button onclick="stopVideo()">Pause</button>
+                <button onclick="restartVideo()">Wiederholen</button>
+            </div>
+            <!-- 新增按钮，用于触发14次点击事件 -->
+            <button id="click14Button" class="hidden">Klick 14 Mal!</button>
+        </div>
+    </div>
+
+    <!-- 隐藏的音频播放部分 -->
+    <audio id="audioSurprise" src="rainbowByXG.m4a"></audio>
+
+    <div id="balloons">
+        <div class="balloon" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="balloon" style="left: 30%; animation-delay: 0.5s;"></div>
+        <div class="balloon" style="left: 50%; animation-delay: 1s;"></div>
+        <div class="balloon" style="left: 70%; animation-delay: 1.5s;"></div>
+        <div class="balloon" style="left: 90%; animation-delay: 2s;"></div>
+    </div>
+    <div id="wishesWall">
+        <h2>Wishes Wall</h2>
+        <textarea id="wishInput" placeholder="Put your wishes here..."></textarea>
+        <button id="submitWish">Submit Wish</button>
+        <div id="wishes"></div>
+    </div>  
+    <script src="Guizhen.js"></script>
+</body>
+</html>
